@@ -1,0 +1,97 @@
+{
+  "currency": "RUB",
+  "disclaimer": "Предварительная смета по ориентиру Москвы и МО на основе открытых цен 2025-2026 гг. Финальная стоимость зависит от замеров, состояния объекта и точного состава работ.",
+  "propertyTypeAdjustments": {
+    "apartment": 1,
+    "house": 1.14
+  },
+  "conditionAdjustments": {
+    "new_build": 1,
+    "secondary": 1.12
+  },
+  "roomAdjustments": {
+    "1": 0.96,
+    "2": 1,
+    "3": 1.05,
+    "4plus": 1.1
+  },
+  "bathroomAddons": {
+    "first": 180000,
+    "additional": 120000
+  },
+  "packages": {
+    "cosmetic": {
+      "label": "Косметический",
+      "baseRate": 18000,
+      "distribution": {
+        "prep": 0.07,
+        "rough": 0.16,
+        "finish": 0.46,
+        "engineering": 0.08,
+        "wetZones": 0.14,
+        "extras": 0.09
+      }
+    },
+    "capital": {
+      "label": "Капитальный",
+      "baseRate": 43000,
+      "distribution": {
+        "prep": 0.1,
+        "rough": 0.27,
+        "finish": 0.23,
+        "engineering": 0.18,
+        "wetZones": 0.15,
+        "extras": 0.07
+      }
+    },
+    "designer": {
+      "label": "Дизайнерский",
+      "baseRate": 78000,
+      "distribution": {
+        "prep": 0.08,
+        "rough": 0.17,
+        "finish": 0.31,
+        "engineering": 0.15,
+        "wetZones": 0.14,
+        "extras": 0.15
+      }
+    }
+  },
+  "options": {
+    "demolition": {
+      "label": "Демонтаж",
+      "description": "Снятие старых покрытий и подготовка основания",
+      "type": "percent",
+      "value": 0.06,
+      "section": "prep"
+    },
+    "electrical": {
+      "label": "Электрика",
+      "description": "Замена групп, точек, щита и трасс",
+      "type": "percent",
+      "value": 0.08,
+      "section": "engineering"
+    },
+    "plumbing": {
+      "label": "Сантехника",
+      "description": "Разводка воды, канализации и точки подключения",
+      "type": "percent",
+      "value": 0.07,
+      "section": "wetZones"
+    },
+    "finishingMaterials": {
+      "label": "Чистовые материалы",
+      "description": "Пакет материалов для финальной отделки",
+      "type": "percent",
+      "value": 0.15,
+      "section": "finish"
+    },
+    "designSupport": {
+      "label": "Дизайн-сопровождение",
+      "description": "Подбор решений, ведомостей и координация",
+      "type": "percent",
+      "value": 0.1,
+      "section": "extras"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+.env
+.env.*
+!.env.example
+*.local
+
+# Local portfolio/source captures
+/Portfolio/
+/image/
+/PORTFOLIO_GUIDE.md
+/PROJECT_CONTEXT.md
+/PROJECT_PLAN.md
+/System.md
+/docs/PORTFOLIO_CASE.md
+media/raw/*
+!media/raw/.gitkeep
+/media/*.mp4
+/media/*.mkv
+/media/*.mov
+.playwright-mcp/
+/repaircalc-*.png
+public/portfolio/repaircalc-before-after.gif
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

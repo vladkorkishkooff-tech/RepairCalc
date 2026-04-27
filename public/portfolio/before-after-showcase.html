@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RepairCalc Before After</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background: #efebe4;
+      }
+
+      .stage {
+        position: relative;
+        width: min(92vw, 1120px);
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border-radius: 34px;
+        background: #d8d2c8;
+        box-shadow: 0 32px 80px rgba(25, 24, 21, 0.18);
+        isolation: isolate;
+      }
+
+      .layer,
+      .before {
+        position: absolute;
+        inset: 0;
+      }
+
+      .layer {
+        background-image: url('/room-preview/capital.png');
+        background-repeat: no-repeat;
+        background-size: 200% 145%;
+        background-position-y: center;
+      }
+
+      .after {
+        background-position-x: right;
+      }
+
+      .before {
+        overflow: hidden;
+        animation: reveal 4s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+      }
+
+      .before .layer {
+        background-position-x: left;
+      }
+
+      .handle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: rgba(255, 255, 255, 0.92);
+        transform: translateX(-50%);
+        animation: handle 4s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+        z-index: 2;
+      }
+
+      .handle::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 48px;
+        height: 48px;
+        border-radius: 999px;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 18px 34px rgba(25, 24, 21, 0.18);
+      }
+
+      @keyframes reveal {
+        0%,
+        100% {
+          clip-path: inset(0 8% 0 0);
+        }
+
+        50% {
+          clip-path: inset(0 92% 0 0);
+        }
+      }
+
+      @keyframes handle {
+        0%,
+        100% {
+          left: 92%;
+        }
+
+        50% {
+          left: 8%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage" aria-label="RepairCalc до и после">
+      <div class="layer after"></div>
+      <div class="before">
+        <div class="layer"></div>
+      </div>
+      <div class="handle"></div>
+    </main>
+  </body>
+</html>
