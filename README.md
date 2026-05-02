@@ -6,11 +6,9 @@
 
 ## Demo
 
-<video src="docs/assets/repaircalc-video-preview.mp4" controls autoplay muted loop playsinline width="100%"></video>
+https://github.com/user-attachments/assets/9ce3fd06-a0e8-4eaf-8f11-0453207f75f4
 
 Короткий сценарий: пользователь открывает калькулятор, выбирает параметры ремонта, видит live-смету и отправляет заявку в Telegram.
-
-Если GitHub не встроил видео в README, доступна web-safe MP4-версия: [repaircalc-demo-github.mp4](docs/assets/repaircalc-demo-github.mp4).
 
 ## Что показывает проект
 
@@ -33,8 +31,8 @@
 
 ## Portfolio Assets
 
-- Inline video для README: `docs/assets/repaircalc-video-preview.mp4`
-- MP4-версия: `docs/assets/repaircalc-demo-github.mp4`
+- Demo-видео для README: GitHub user attachment в разделе `Demo`
+- Локальная MP4-версия: `docs/assets/repaircalc-demo-github.mp4`
 - HTML-showcase для качественной записи/демо: `public/portfolio/before-after-showcase.html`
 - Preview-сцены: `public/room-preview`
 - GitHub media: `docs/assets`
