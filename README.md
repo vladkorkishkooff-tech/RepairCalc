@@ -6,7 +6,7 @@
 
 ## Demo
 
-https://github.com/user-attachments/assets/9ce3fd06-a0e8-4eaf-8f11-0453207f75f4
+https://github.com/user-attachments/assets/4371f854-b33a-4320-8b19-3c388975cf72
 
 Короткий сценарий: пользователь открывает калькулятор, выбирает параметры ремонта, видит live-смету и отправляет заявку в Telegram.
 
