@@ -6,9 +6,11 @@
 
 ## Demo
 
-[Смотреть видео-демо](docs/assets/repaircalc-demo-github.mp4)
+![RepairCalc demo](docs/assets/repaircalc-demo-inline.gif)
 
 Короткий сценарий: пользователь открывает калькулятор, выбирает параметры ремонта, видит live-смету и отправляет заявку в Telegram.
+
+Если GIF не загрузился из-за соединения, доступна MP4-версия: [repaircalc-demo-github.mp4](docs/assets/repaircalc-demo-github.mp4).
 
 ## Что показывает проект
 
@@ -31,10 +33,10 @@
 
 ## Portfolio Assets
 
-- GIF для кейса: `public/portfolio/repaircalc-before-after.gif`
+- Inline GIF для README: `docs/assets/repaircalc-demo-inline.gif`
+- MP4-версия: `docs/assets/repaircalc-demo-github.mp4`
 - HTML-showcase для качественной записи/демо: `public/portfolio/before-after-showcase.html`
 - Preview-сцены: `public/room-preview`
-- Гайд по записи и презентации: `PORTFOLIO_GUIDE.md`
 - GitHub media: `docs/assets`
 
 ## Стек
